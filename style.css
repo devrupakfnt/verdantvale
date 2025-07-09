@@ -1,0 +1,186 @@
+:root {
+    --primary-green: #2e8b57;
+    --dark-green: #1e5631;
+    --light-green: #d8ebb5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: white !important;
+}
+
+.navbar-brand span {
+    color: var(--primary-green);
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: var(--light-green) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('img/banner.avif');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 12rem 0 8rem;
+    position: relative;
+
+}
+
+.section-title {
+    color: var(--dark-green);
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-green);
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card .card-body {
+    padding: 25px;
+}
+
+.service-card .card-title {
+    color: var(--dark-green);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+    color: var(--light-green);
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.social-icons a:hover {
+    color: var(--light-green);
+}
+
+.about-section {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+.mission-vision {
+    background-color: var(--light-green);
+    padding: 4rem 0;
+}
+
+.company-page {
+    padding: 5rem 0;
+}
+
+/* Mobile menu styles */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: white !important;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-toggler {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 4px;
+    }
+
+    .nav-link {
+        color: var(--dark-green) !important;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-link:hover {
+        color: var(--primary-green) !important;
+    }
+
+    .dropdown-menu {
+        background-color: #f8f9fa;
+        border: none;
+        box-shadow: none;
+    }
+
+    .dropdown-item {
+        color: var(--dark-green);
+        padding: 8px 15px;
+    }
+}
